@@ -16,20 +16,31 @@
           <form id="new-contact">
             <div class="form-group">
               <label for="new-name-first">First</label>
-              <input type="text" class="form-control" id="new-name-first">
+              <input type="text" class="form-control" id="new-name-first" placeholder="ex. John">
             </div>
             <div class="form-group">
               <label for="new-name-last">Last</label>
-              <input type="text" class="form-control" id="new-name-last">
+              <input type="text" class="form-control" id="new-name-last" placeholder="ex. Smith">
             </div>
-            <div class="form-group">
-              <label for="new-address-city">City</label>
-              <input type="text" class="form-control" id="new-address-city">
+
+            <div id="new-addresses">
+              <div class="new-address primary-addresses">
+                <div class="form-group">
+                  <label for="new-street">Address</label>
+                  <input type="text" class="form-control new-street"  placeholder="ex. 950 Ivy Drive">
+                </div>
+                <div class="form-group">
+                  <label for="new-city">City</label>
+                  <input type="text" class="form-control new-city" placeholder="ex. New York">
+                </div>
+                <div class="form-group">
+                  <label for="new-state">State</label>
+                  <input type="text" class="form-control new-state" placeholder="ex. NY">
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="new-name-last">State</label>
-              <input type="text" class="form-control" id="new-address-state">
-            </div>
+
+            <span class="btn btn-primary" id="add-address">Another address</span>
 
             <button type="submit" class="btn">Add</button>
           </form>
